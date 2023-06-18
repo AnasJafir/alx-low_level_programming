@@ -8,12 +8,14 @@
 */
 int main(void)
 {
-	int A = 15;
+	int A = 48;
 
-	while (A >= 0)
+	while (A <= 102)
 	{
-		printf("%d", A);
-		A--;
+		putchar(A);
+		if (A == 57)
+			A += 39;
+			A++;
 	}
 	putchar('\n');
 	return (0);
