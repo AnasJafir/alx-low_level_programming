@@ -4,7 +4,7 @@
  *
  * Description: Print digits of base 10
  *
- * Return : 0 (Success)
+ * Return: 0 (Success)
 */
 int main(void)
 {
