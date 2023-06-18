@@ -14,8 +14,10 @@ int main(void)
 	{
 		putchar(A + 48);
 		if (A != 9)
+		{
 		putchar(',');
 		putchar (' ');
+		}
 		A++;
 	}
 	putchar('\n');
