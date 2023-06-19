@@ -21,14 +21,14 @@ int main(void)
 				num4 = 0;
 				while (num4 <= 9)
 				{
-					if ((num1 <= num3) && (num1 + num2) < (num3 + num4))
+					if ((num1 <= num3) && ((num1 + num2) < (num3 + num4)))
 					{
 						putchar(num1 + 48);
 						putchar(num2 + 48);
 						putchar(' ');
 						putchar(num3 + 48);
 						putchar(num4 + 48);
-					if (num1 != 9 && num2 != 8 && num3 != 9 && num4 != 9)
+					if (num1 != 9 || num2 != 8 || num3 != 9 || num4 != 9)
 					{
 						putchar(',');
 						putchar(' ');
