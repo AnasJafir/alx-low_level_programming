@@ -21,7 +21,7 @@ int main(void)
 				num4 = 0;
 				while (num4 <= 9)
 				{
-					if (((num1 + num2) < (num3 + num4)) && (num1 == num2) && (num1 == num3))
+					if ((num1 + num2) <= (num3 + num4))
 					{
 						putchar(num1 + 48);
 						putchar(num2 + 48);
