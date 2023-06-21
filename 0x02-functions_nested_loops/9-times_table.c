@@ -4,20 +4,17 @@
 */
 void times_table(void)
 {
-	int y = 0;
+	int y;
 	int z;
 
-	while (y <= 9)
+	for (y = 0; y <= 9; y++)
 	{
-		z = 0;
-		while (z <= 9)
+		for (z = 0; z <= 9; z++)
 		{
 			_putchar((y * z) + '0');
 			_putchar(',');
 			_putchar(' ');
 			_putchar('\n');
 		}
-		z++;
 	}
-	y++;
 }
