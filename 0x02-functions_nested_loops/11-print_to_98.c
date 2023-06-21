@@ -25,6 +25,7 @@ void print_to_98(int n)
 		_putchar(',');
 		_putchar(' ');
 	}
+	n++;
 	_putchar((98 / 10) + 48);
 	_putchar((98 % 10) + 48);
 	_putchar('\n');
