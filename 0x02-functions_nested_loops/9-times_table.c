@@ -12,12 +12,11 @@ void times_table(void)
 		{
 			int y = a * z;
 
-			if (y == 0)
+			if (z == 0)
 			{
 				_putchar(y + 48);
 				_putchar(',');
 				_putchar(' ');
-				_putchar('\n');
 			}
 			else if (y <= 9)
 			{
@@ -28,17 +27,15 @@ void times_table(void)
 			}
 			else if (y > 9)
 			{
+				_putchar((y / 10) + 48);
+				_putchar((y % 10) + 48);
 				if (z != 9)
 				{
-					_putchar((y / 10) + 48);
-					_putchar((y % 10) + 48);
 					_putchar(',');
 					_putchar(' ');
 				}
 				else
 				{
-					_putchar((y / 10) + 48);
-					_putchar((y % 10) + 48);
 					_putchar('\n');
 				}
 			}
