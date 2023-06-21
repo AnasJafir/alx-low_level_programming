@@ -35,6 +35,11 @@ void print_to_98(int n)
 				_putchar(',');
 				_putchar(' ');
 			}
+			else if (digit <= 99)
+			{
+				_putchar((digit / 10) + 48);
+				_putchar((digit % 10) + 48);
+			}
 		}
 	}
 	_putchar('\n');
