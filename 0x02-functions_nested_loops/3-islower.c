@@ -9,13 +9,13 @@
 */
 int _islower(int c)
 {
-	int x;
+	int r;
 
-	x = _islower('J');
-	_putchar(x + 48);
-	x = _islower('c');
-	_putchar(x + 48);
-	x = _islower('K');
-	_putchar(x + 48);
+	r = _islower('J');
+	_putchar(r + 48);
+	r = _islower('c');
+	_putchar(r + 48);
+	r = _islower('K');
+	_putchar(r + 48);
 	return (0);
 }
