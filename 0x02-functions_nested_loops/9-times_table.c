@@ -39,8 +39,8 @@ void times_table(void)
 					_putchar((y / 10) + 48);
 					_putchar((y % 10) + 48);
 				}
-				_putchar('\n');
 			}
 		}
+		_putchar('\n');
 	}
 }
