@@ -1,5 +1,5 @@
-#ifndef HEADER_FILE_NAME_H
-#define HEADER_FILE_NAME_H
+#ifndef MAIN_H_
+#define MAIN_H_
 
 int _putchar(char c);
 int _isupper(int c);
