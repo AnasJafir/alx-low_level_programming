@@ -2,9 +2,7 @@
 /**
  * print_square - print the square of numbers
  *
- * @size: integer type input
- *
- * Return: Always 0 ( Success)
+ * @size: number of square/number of times
 */
 void print_square(int size)
 {
@@ -14,9 +12,9 @@ void print_square(int size)
 	{
 		_putchar('\n');
 	}
-	for (i = 0; i <= size; i++)
+	for (i = 1; i <= size; i++)
 	{
-		for (j = 0; j <= size; j++)
+		for (j = 1; j <= size; j++)
 			_putchar(35);
 		_putchar('\n');
 	}
