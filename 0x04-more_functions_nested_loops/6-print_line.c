@@ -2,10 +2,8 @@
 /**
  * print_line - print a straight line
  *
- * @n: integer type input
- *
- * Return: result of drawing lines
- */
+ * @n: number of time the _ should be printed
+*/
 void print_line(int n)
 {
 	int i;
