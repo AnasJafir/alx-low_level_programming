@@ -3,35 +3,25 @@
 /**
  * print_diagonal - print a diagonal line
  *
- * @n : line length
+ * @n : number of times the '\' should be printed
 */
 
 void print_diagonal(int n)
 {
-	int p = 0, s = 0, e;
+	int p, s;
 
 	if (n <= 0)
 		_putchar('\n');
 	else
 	{
-		while (p <= n)
+		for (p = 1; p <= n; p++)
 		{
-			e = p;
-			while (s <= n)
+			for (s = 1; s <= n; s++)
 			{
-				if (s == n)
-				{
-					_putchar('\\');
-					_putchar('\n');
-				}
-				else
-				{
-					_putchar (' ');
-				}
-				s++;
+				_putchar(' ');
 			}
-			s = 0;
-			p++;
+			_putchar(92);
+			_putchar('\n');
 		}
 	}
 }
