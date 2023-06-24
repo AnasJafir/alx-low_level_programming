@@ -3,6 +3,8 @@
  * print_square - print the square of numbers
  *
  * @size: integer type input
+ *
+ * Return: Always 0 ( Success)
 */
 void print_square(int size)
 {
