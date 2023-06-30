@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 
 /**
  * _strcat - function that appends a string to another
@@ -14,14 +13,14 @@ char *_strcat(char *dest, char *src)
 	int i = 0;
 	int j = 0;
 
-	while (dest[i] != '\0')
-		_putchar(dest[i]);
-	i++;
-	_putchar(' ');
-	while (src[j] != '\0')
-		_putchar(src[j]);
-	j++;
-
-	_putchar('\n');
+	while (dest[i])
+	{
+		i++;
+	}
+	while (src[j])
+	{
+		src[j] = dest[i++];
+		j++;
+	}
 	return (dest);
 }
