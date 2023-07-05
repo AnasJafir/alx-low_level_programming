@@ -5,11 +5,11 @@
 */
 void _print_rev_recursion(char *s)
 {
-	int n = 0;
 	int i = 0;
 
-	while (s[n] != '\0')
-		n++;
-	for (i = n - 1; i >= 0; i--)
-		_putchar(s[i]);
+	if (s[i] > '\0')
+	{
+		_print_rev_recursion(&s[i + 1]);
+		_putchar(s[i + 1]);
+	}
 }
