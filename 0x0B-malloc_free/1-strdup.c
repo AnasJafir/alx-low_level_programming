@@ -10,21 +10,20 @@
 */
 char *_strdup(char *str)
 {
-	int i = strlen(str);
-	int j = 0;
+	int i, j;
 	char *newstr;
 
 	if (str == NULL)
 		return (NULL);
 
+	i = strlen(str);
 	newstr = (char *)malloc((i + 1) * sizeof(char));
 
 	if (newstr == NULL)
 		return (NULL);
-	while (j < i)
+	for (j = 0; j < i; j++)
 	{
 		newstr[j] = str[j];
-		j++;
 	}
 	return (newstr);
 	free(newstr);
