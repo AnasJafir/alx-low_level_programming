@@ -3,9 +3,6 @@
 /**
  * print_dog - a function that prints a struct dog
  * @d: the dog
- * @name: dog's name
- * @age: dog's age
- * @owner: dog's owner
  * 
  * Return: void
 */
