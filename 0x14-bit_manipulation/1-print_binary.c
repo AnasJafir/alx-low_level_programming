@@ -6,24 +6,22 @@
 */
 void print_binary(unsigned long int n)
 {
-	int total = 0;
-	int count = 0;
-	int digit[32];
-	int temp;
+	int num_bits = sizeof(unsigned long int) * 8;
+	int printed = 0;
+	unsigned long int x;
+	int i;
 
-	if (n == 0)
+	for (i = num_bits - 1; i >= 0; i--)
+	{
+		x = 1UL << i;
+		if (n & x)
+		{
+			_putchar('1');
+			printed = 1;
+		}
+		else if (printed || i == 0)
+			_putchar('0');
+	}
+	if (printed == 0)
 		_putchar('0');
-	while (n != 0)
-	{
-		temp = n % 2;
-		digit[count] = temp;
-		n /= 2;
-		total++;
-		count++;
-	}
-	while (count > 0)
-	{
-		_putchar('0' + digit[count - 1]);
-		count--;
-	}
 }
