@@ -27,7 +27,10 @@ int main(int argc, char **argv)
 
 	f_from = close(f_from);
 	f_to = close(f_to);
-	if (f_from == -1 || f_to == -1)
+	if (f_from)
 		dprintf(STDERR_FILENO, NO_CLOSE, f_from), exit(100);
-	return (1);
+	if (f_to)
+		dprintf(STDERR_FILENO, NO_CLOSE, f_from), exit(100);
+
+	return (EXIT_SUCCESS);
 }
