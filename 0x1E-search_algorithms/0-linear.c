@@ -2,6 +2,7 @@
 /**
 * linear_search - function to search an item using linear algo
 * @array: input array
+* @size: size of the array
 * @value: item to search
 * Return: First index where value is located or -1
 */
